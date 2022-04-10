@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+Carro
+Computador
+Cadeira
+Bicicleta
+Teclado
+Controle
+Ovo
+Cachorro
+Cama
+Janela
+Lampada
+Espelho
+Camisa
+=======
+Carro
+Computador
+Cadeira
+Bicicleta
+Teclado
+Controle
+Ovo
+Cachorro
+Cama
+Janela
+Lampada
+Espelho
+>>>>>>> 45c4d4daba5fade74f2dc70c6a6b09576865be39
