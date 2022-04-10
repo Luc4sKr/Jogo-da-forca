@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pygame # Para instalar -> pip3 install pygame
 from random import randint
 from sys import exit
@@ -193,7 +192,6 @@ class Forca:
 
 if __name__ == '__main__':
     forca = Forca()
-=======
 import pygame
 from random import randint
 from sys import exit
@@ -300,4 +298,4 @@ class Forca:
 
 if __name__ == '__main__':
     forca = Forca()
->>>>>>> 45c4d4daba5fade74f2dc70c6a6b09576865be39
+
