@@ -25,4 +25,16 @@ Cama
 Janela
 Lampada
 Espelho
->>>>>>> 45c4d4daba5fade74f2dc70c6a6b09576865be39
+Livro
+Floresta
+Fotografia
+Fantasma
+Mochila
+Motor
+Martelo
+Arma
+Armadilha
+Mapa
+Macaco
+Cobertor
+Caminhão
