@@ -37,7 +37,10 @@ class Forca:
         #print(self.palavra_sorteada)
 
         for letras_da_palavra in self.palavra_sorteada:
-             self.letras_corretas.append("_ ")
+            if letras_da_palavra == " ":
+                self.letras_corretas.append(" ")
+            else:
+                self.letras_corretas.append("_")
 
         self.erros = 5
 
@@ -53,14 +56,14 @@ class Forca:
 
             self.forca()
 
-            self.draw(str(self.letras_corretas).strip("[]").replace("'", ""), 32, (255, 255, 255), self.SCREEN_X/2, 300)
+            self.draw(str(self.letras_corretas).strip("[]").replace("'", "").replace(",", ""), 32, (255, 255, 255), self.SCREEN_X/2, 300)
             self.draw(f"Letras jogadas: {str(self.letras_jogadas)}".replace("'", ""), 20, (255, 255, 255), 10, 400, True, False)
 
             pygame.draw.rect(self.screen, self.color, self.input_rect, 2)
             self.text_surface = self.base_font.render(self.user_text, True, (255, 255, 255))
             self.screen.blit(self.text_surface, (self.SCREEN_X/2, self.input_rect.y + 5))
 
-            if self.letras_corretas.count("_ ") == 0: # Precisa ser "_ " pois la lista tem um espaço separa separar melhor as palavras
+            if self.letras_corretas.count("_") == 0: 
                 self.tela_vitoria = True
                 self.game_over = True
                 self.tela_de_vitoria()
@@ -103,7 +106,7 @@ class Forca:
                     if self.letras_jogadas.count(self.user_text) > 1:
                         self.letras_jogadas.remove(self.user_text)
                         self.letras_jogadas.sort()
-                    print(self.letras_jogadas)
+                    #print(self.letras_jogadas)
 
                     # -- Verifica se a letra não exite na palavra -------------
                     if self.user_text.upper() not in self.letras_corretas:
